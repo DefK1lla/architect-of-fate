@@ -311,6 +311,30 @@
     color: $color-primary;
   }
 
+  &__link-wrapper {
+    position: relative;
+
+    max-width: 445px;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      right: -30px;
+
+      width: 50px;
+      height: 87px;
+
+      background: url(../assets/icons/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   &__link {
     position: relative;
 
