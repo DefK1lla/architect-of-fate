@@ -267,4 +267,142 @@
   }
 }
 
+.gratitude {
+  padding-top: 17px;
+
+  background: url(../assets/images/gratitude/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 26px;
+    left: 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    color: $color-primary;
+    text-align: center;
+  }
+}
+
+.redirect {
+  padding: 60px 0 100px;
+
+  text-align: center;
+
+  &__date {
+    margin: 40px 0;
+
+    font-family: "Optima", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__link {
+    position: relative;
+
+    width: 100%;
+    min-width: 300px;
+    max-width: 355px;
+
+    padding: 21px 40px;
+    margin: 40px 0;
+
+    display: inline-block;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+
+    background: $color-telegram;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 54px $color-tg-shadow);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: 19px;
+
+      width: 50px;
+      height: 50px;
+
+      background: url(../assets/icons/tg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.footer {
+  padding: 23px 0 46px;
+
+  background: $color-smoke-2;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__support {
+    margin: 0 15px;
+    padding: 20px 70px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      max-width: 450px;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      text-align: right;
+    }
+  }
+
+  &__logo {
+    margin: 0 30px 33px 0;
+
+    align-self: flex-end;
+  }
+
+  &__link {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 @import "media";

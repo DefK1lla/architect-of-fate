@@ -24,3 +24,34 @@
     }
   }
 }
+
+@media (min-wdith: 992px) {
+  .gratitude {
+    &__img {
+      margin-right: -100%;
+    }
+  }
+}
+
+@media (max-width: 722px) {
+  .gratitude {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__logo {
+      position: static;
+    }
+  }
+}
+
+@media (min-width: 1177px) {
+  .footer {
+    &__support {
+      margin-right: 30px;
+      padding: 70px 100px 70px 0;
+
+      border-right: 1px solid $color-black;
+    }
+  }
+}
