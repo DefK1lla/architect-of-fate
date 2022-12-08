@@ -1,0 +1,12 @@
+@media (max-width: 490px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  .intro {
+    &__logo {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

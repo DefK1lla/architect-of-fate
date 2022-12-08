@@ -1,9 +1,15 @@
 $color-primary: #7F56A7;
-$color-secondary: linear-gradient(180deg, #AA84CF 0%, #DDBDFC 9.38%, #C5A4E7 22.5%, #AA84CF 100%);
-$color-tertiary: linear-gradient(85.98deg, #DEAD74 5.29%, #F4D5B0 16.88%, #FCDDB9 76%, #E0B079 98.61%), #000000;
+
+$gradient-primary: linear-gradient(180deg, #AA84CF 0%, #DDBDFC 9.38%, #C5A4E7 22.5%, #AA84CF 100%);
+$gradient-secondary: linear-gradient(85.98deg, #DEAD74 5.29%, #F4D5B0 16.88%, #FCDDB9 76%, #E0B079 98.61%), #000000;
+$gradient-tertiary: linear-gradient(0deg, #BE8E55, #BE8E55), #000000;
 
 $color-smoke: #F7F7F7;
 $color-smoke-2: #F1EDEF;
 
 $color-telegram: #4797E1;
-$color-shadow: #555;
+
+$color-black: #000000;
+$color-dark: #1F1F1F;
+
+$color-shadow: #BE8E55;

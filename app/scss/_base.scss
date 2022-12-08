@@ -9,11 +9,12 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-black;
 }
 
 .wrapper {
@@ -26,4 +27,67 @@ body {
 
 .page {
   flex: 1 1 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1190px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Optima", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+b {
+  font-weight: 700;
+}
+
+.btn {
+  position: relative;
+
+  width: 100%;
+  max-width: 445px;
+
+  padding: 25px 30px;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+
+  background: $gradient-secondary;
+  border-radius: 20px;
+  box-shadow: 2px 3px 0px 1px $color-shadow;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(#fff, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+  }
+
+  &:hover::before {
+    animation: move-light 0.5s
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    transform: scale(0.99);
+    box-shadow: none;
+  }
 }
