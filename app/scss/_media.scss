@@ -3,10 +3,24 @@
     font-size: 44px;
   }
 
+  .title {
+    font-size: 36px;
+  }
+
   .intro {
     &__logo {
       margin-right: 0;
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 1164px) {
+  .program {
+    &__items {
+      background: url(../assets/images/program/grl.png);
+      background-repeat: no-repeat;
+      background-position: bottom center;
     }
   }
 }

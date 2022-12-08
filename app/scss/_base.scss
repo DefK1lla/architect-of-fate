@@ -46,7 +46,15 @@ h1 {
   text-transform: uppercase;
 }
 
-b {
+.title {
+  font-family: "Optima", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: $color-primary;
+  text-align: center;
+}
+
+.bold {
   font-weight: 700;
 }
 
