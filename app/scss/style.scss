@@ -378,56 +378,62 @@
 .footer {
   padding: 23px 0 46px;
 
+  color: $color-primary;
+
   background: $color-smoke-2;
 
   &__inner {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
-  &__support {
-    margin: 0 15px;
-    padding: 20px 70px;
-  }
-
-  &__contacts {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-wrap: wrap;
-  }
-
-  &__col {
-    &:nth-child(1) {
-      max-width: 450px;
-    }
-
-    &:nth-child(2) {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      text-align: right;
-    }
-  }
-
-  &__logo {
-    margin: 0 30px 33px 0;
-
-    align-self: flex-end;
+  &__title {
+    margin-bottom: 10px;
   }
 
   &__link {
     font-family: inherit;
     font-size: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
+
+    &_wz {
+      position: relative;
+
+      padding-left: 42px;
+
+      text-decoration: none;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 25px;
+        height: 25px;
+
+        background: url(../assets/icons/wz.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__treaties,
+  &__support {
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 
