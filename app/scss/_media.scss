@@ -13,10 +13,6 @@
       margin-bottom: 30px;
     }
   }
-
-  .footer {
-    text-align: center;
-  }
 }
 
 @media (min-width: 1164px) {
@@ -45,6 +41,17 @@
 
     &__logo {
       position: static;
+    }
+  }
+}
+
+@media (min-width: 1177px) {
+  .footer {
+    &__support {
+      margin-right: 30px;
+      padding: 70px 100px 70px 0;
+
+      border-right: 1px solid $color-black;
     }
   }
 }
